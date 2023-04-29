@@ -1,0 +1,103 @@
+#####OPEN DATABASE####
+library(readxl)
+base2 <- read_excel("~/Desktop/DATI ELENA/Articolo PIPPI/Articolo luglio 2022/base2.xlsx")
+View(base2)
+###DESCRIPTIVE ANALYSIS BASED ON SPECIES; SEX AND AGE###
+table(base1$specie)
+table(base1$sesso)
+table(base1$eta)
+
+table(base1$sesso, base1$specie)
+table(base1$eta, base1$specie)
+table(base1$stag_ritr, base1$specie)
+
+###DESCRIPTIVE ANALYSIS BASED ON SEASON OF RESCUE####
+table(base1$stag_ritr)
+table(base1$stag_ritr,base1$causa_morte)
+
+###DESCRIPTIVE ANALYSIS OF CAUSES OF DEATH BASED ON SPECIES, SEX, AGE AND SEASON OF RESCUE####
+table(base1$causa_morte)
+table(base1$causa_morte, base1$specie)
+table(base1$causa_morte, base1$sesso)
+table(base1$causa_morte, base1$eta)
+table(base1$causa_morte, base1$stag_ritr)
+
+###DESCRIPTIVE ANALYSIS OF GROSS FINDINGS BASED ON SPECIES, SEX, AGE AND SEASON OF RESCUE####
+table(base1$fratture)
+table(base1$fratture, base1$specie)
+table(base1$fratture, base1$sesso)
+table(base1$fratture, base1$eta)
+table(base1$fratture, base1$stag_ritr)
+
+table(base1$lacerazione_patagio)
+table(base1$lacerazione_patagio, base1$specie)
+table(base1$lacerazione_patagio, base1$sesso)
+table(base1$lacerazione_patagio, base1$eta)
+table(base1$lacerazione_patagio, base1$stag_ritr)
+
+table(base1$macro_organi)
+table(base1$macro_organi, base1$specie)
+table(base1$macro_organi, base1$sesso)
+table(base1$macro_organi, base1$eta)
+table(base1$macro_organi, base1$stag_ritr)
+
+###DESCRIPTIVE ANALYSIS OF MICROSCOPIC FINDINGS BASED ON SPECIES, SEX, AGE AND SEASON OF RESCUE####
+table(base1$micro)
+table(base1$micro, base1$specie)
+table(base1$micro, base1$sesso)
+table(base1$micro, base1$eta)
+table(base1$micro, base1$stag_ritr)
+
+
+table(base1$polmone)
+table(base1$polmone, base1$specie)
+table(base1$polmone, base1$sesso)
+table(base1$polmone, base1$eta)
+table(base1$polmone, base1$stag_ritr)
+
+table(base1$fegato)
+table(base1$fegato, base1$specie)
+table(base1$fegato, base1$sesso)
+table(base1$fegato, base1$eta)
+table(base1$fegato, base1$stag_ritr)
+
+table(base1$milza)
+table(base1$milza, base1$specie)
+table(base1$milza, base1$sesso)
+table(base1$milza, base1$eta)
+table(base1$milza, base1$stag_ritr)
+
+table(base1$rene)
+table(base1$rene, base1$specie)
+table(base1$rene, base1$sesso)
+table(base1$rene, base1$eta)
+table(base1$rene, base1$stag_ritr)
+
+table(base1$patagio)
+table(base1$patagio, base1$specie)
+table(base1$patagio, base1$sesso)
+table(base1$patagio, base1$eta)
+table(base1$patagio, base1$stag_ritr)
+
+table(base1$intestino)
+table(base1$intestino, base1$specie)
+table(base1$intestino, base1$sesso)
+table(base1$intestino, base1$eta)
+table(base1$intestino, base1$stag_ritr)
+
+###DESCRIPTIVE ANALYSIS OF VIRAL ISOLATION BASED ON SPECIES, SEX, AGE AND SEASON OF RESCUE###
+table(base1$corona_int)
+
+table(base1$ortho_int)
+table(base1$ortho_int, base1$specie)
+table(base1$ortho_int, base1$sesso)
+table(base1$ortho_int, base1$eta)
+table(base1$ortho_int, base1$stag_ritr)
+
+table(base1$pox_p)
+table(base1$pox_p, base1$specie)
+table(base1$pox_p, base1$sesso)
+table(base1$pox_p, base1$eta)
+table(base1$pox_p, base1$stag_ritr)
+
+table(base1$kobo_int)
